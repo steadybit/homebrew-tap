@@ -6,25 +6,25 @@ cask "steadybit" do
     end
   end
 
-  version "6.1.0"
+  version "6.2.0"
 
   on_macos do
     on_arm do
-      sha256 "f54cab172e5ff5e506cd767e8f1b1e6a0afb4cad54f122d5ac8273bf7f77ab2c"
+      sha256 "ce78663de5b26e50f6f1ca203c0fa1f40aa919571c6760b53d96e2cbd11164b5"
       url "https://github.com/steadybit/cli/releases/download/v#{version}/steadybit_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "b35bf77925064150088c9931a5ab9b6c76f4853c5b98222b53f99e0dabd1e843"
+      sha256 "0d10e8ff7a9a274a4e1a93814d17325097f2d1fea5471d6a3a413853bf6404e0"
       url "https://github.com/steadybit/cli/releases/download/v#{version}/steadybit_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "600ec74a0cd7dd0195cf371590ebdc033933881221d845646f2f3c44037deb9f"
+      sha256 "74df4a6a4b1177966663a94c6a22df52c7db8f398ea4b586e471218a94fcd9be"
       url "https://github.com/steadybit/cli/releases/download/v#{version}/steadybit_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "ab6a136bfc3c21606fc57a64f1c508d655c7975088b2cd6d95ca36dbf4877972"
+      sha256 "d430ee5d90dbb91f55612653f432aec8bf567e508158353d38288497be9cd207"
       url "https://github.com/steadybit/cli/releases/download/v#{version}/steadybit_linux_amd64.tar.gz"
     end
   end
