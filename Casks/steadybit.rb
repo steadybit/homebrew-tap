@@ -6,25 +6,25 @@ cask "steadybit" do
     end
   end
 
-  version "6.2.4"
+  version "6.3.0"
 
   on_macos do
     on_arm do
-      sha256 "eeb00040f781a60f44eadf5d88909741df729a401bbe7222ecc5ccf1f497b4fb"
+      sha256 "57fd8a39cd411a42da1361aebde59cc4dbc9209c88ebb6e8f2668dafe7f66c01"
       url "https://github.com/steadybit/cli/releases/download/v#{version}/steadybit_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "5aefdbbea6e311926852895d3e1902ebb24e73f33735a8dab8f5d1d0e01afdd0"
+      sha256 "384e2e35bb1c20a5184cc7c64911915d42703d8b62aaeed098f70caab15017b0"
       url "https://github.com/steadybit/cli/releases/download/v#{version}/steadybit_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "047170a6dd176996bddcb8856268a8e488e234b5c11d23d8c1cd85a81d0a12bc"
+      sha256 "996c734a4509c5b56df2a88f294e17734876d63fff63b8eb55293723ac7d6ba5"
       url "https://github.com/steadybit/cli/releases/download/v#{version}/steadybit_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "681cdda26f8a53ee086e5e83ab6669296ddf7d8bdea5e3a472c011f31a0f3e6a"
+      sha256 "43b7c72fde42c15d977b8266550acd915f47f318e2135f3ce0a947e34356b577"
       url "https://github.com/steadybit/cli/releases/download/v#{version}/steadybit_linux_amd64.tar.gz"
     end
   end
@@ -39,8 +39,8 @@ cask "steadybit" do
 
   binary "steadybit"
   bash_completion "completions/steadybit.bash"
-  fish_completion "completions/steadybit.fish"
   zsh_completion "completions/_steadybit"
+  fish_completion "completions/steadybit.fish"
 
   # No zap stanza required
 end
